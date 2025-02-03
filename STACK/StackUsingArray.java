@@ -1,8 +1,8 @@
 
 public class StackUsingArray {
 
-    private int[] data;
-    private int top;
+    protected int[] data;
+    protected int top;
 
     public static final int DEFAULT_CAPACITY = 10;
 
