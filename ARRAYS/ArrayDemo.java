@@ -5,7 +5,7 @@ public class ArrayDemo {
 
     public static void main(String[] args) {
         int[] arr1 = {10, 20, 30, 40, 50};
-        System.out.println(arr1); // [I@15db9742 Its present the address of the  array
+        System.out.println(arr1); // [I@15d9742 Its present the address of the  array
         System.out.println(Arrays.toString(arr1));
 
         int[] arr2 = new int[10];
