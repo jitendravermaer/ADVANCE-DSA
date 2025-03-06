@@ -81,7 +81,9 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
+        
         bst.display();
+        
         System.out.println(bst.search(5));
         System.out.println(bst.search(10));
     }
