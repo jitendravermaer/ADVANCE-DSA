@@ -17,6 +17,5 @@ public class SetDemo {
         System.out.println("Set: " + s);
         System.out.println(s.contains(15));
 
-        // add, remove, contains
     }
 }
