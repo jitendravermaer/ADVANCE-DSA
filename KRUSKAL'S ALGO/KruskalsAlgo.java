@@ -9,6 +9,7 @@ public class KruskalsAlgo {
             parent[i] = i;
             rank[i] = 0;
         }
+        
         Collections.sort(graph, (a, b) -> a.get(2) - b.get(2));
         for (int i = 0; i < E; i++) {
             int u = graph.get(i).get(0);
@@ -45,6 +46,7 @@ public class KruskalsAlgo {
     public static void main(String[] args) {
         int V = 4;
         int E = 5;
+        
         ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
         graph.add(new ArrayList<>(Arrays.asList(0, 1, 10)));
         graph.add(new ArrayList<>(Arrays.asList(0, 2, 6)));
