@@ -16,6 +16,7 @@ public class DijkstrasAlgo {
                         return a.get(1) - b.get(1);
                     }
                 });
+        
         pq.add(new ArrayList<Integer>(Arrays.asList(s, 0)));
         while (!pq.isEmpty()) {
             int node = pq.poll().get(0);
@@ -62,6 +63,7 @@ public class DijkstrasAlgo {
         adj.get(8).add(new ArrayList<>(Arrays.asList(2, 2)));
         adj.get(8).add(new ArrayList<>(Arrays.asList(6, 6)));
         adj.get(8).add(new ArrayList<>(Arrays.asList(7, 7)));
+        
         int[] res = dijkstra(9, adj, 0);
         System.out.println("Shortest distances from source 0:");
         System.out.println("Vertex \t Distance from Source");
