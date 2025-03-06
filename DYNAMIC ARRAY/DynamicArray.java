@@ -52,5 +52,4 @@ public class DynamicArray {
     public int size() {
         return currentSize;
     }
-
 }
