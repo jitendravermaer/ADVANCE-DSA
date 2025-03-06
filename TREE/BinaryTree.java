@@ -32,10 +32,12 @@ public class BinaryTree {
 
     Node createTree(Scanner sc) {
         int data = sc.nextInt();
+        
         //base case
         if (data == -1) {
             return null;
         }
+        
         //recursive case
         Node n = new Node(data);
         n.left = createTree(sc);
