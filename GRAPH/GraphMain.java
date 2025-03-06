@@ -11,6 +11,5 @@ public class GraphMain {
 
         System.out.println(g);
         g.printGraph();
-
     }
 }
