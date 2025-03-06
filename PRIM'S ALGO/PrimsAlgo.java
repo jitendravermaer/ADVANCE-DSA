@@ -9,6 +9,7 @@ public class PrimsAlgo {
         Arrays.fill(key, Integer.MAX_VALUE);
         key[0] = 0;
         int res = 0;
+        
         for (int count = 0; count < V; count++) {
             int u = -1;
             for (int i = 0; i < V; i++) {
