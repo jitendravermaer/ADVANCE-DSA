@@ -1,6 +1,6 @@
 public class GreedyAlgo {
 
-    static int GreedyAlgorithm(int[] A) {
+    static int GreedyAlgo(int[] A) {
         int count = 0;
         int state = 0;
         for (int i = 0; i < A.length; i++) {
@@ -14,6 +14,6 @@ public class GreedyAlgo {
 
     public static void main(String[] args) {
         int[] A = { 0, 1, 0, 1 };
-        System.out.println(GreedyAlgorithm(A));
+        System.out.println(GreedyAlgo(A));
     }
 }
