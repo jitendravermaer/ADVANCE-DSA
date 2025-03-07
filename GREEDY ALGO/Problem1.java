@@ -1,5 +1,5 @@
 // Given N bulbes, either on (1) or off (0).
-// Turning on ith bulb causes all remaining bulbs to turn on the right to flip.
+// Turning on i'th bulb causes all remaining bulbs to turn on the right to flip.
 
 // Find the minimum number of switches to turn on all the bulbs.
 
@@ -12,6 +12,7 @@ public class Problem1 {
     static int minSwitches(int[] A) {
         int count = 0;
         int state = 0;
+        
         for (int i = 0; i < A.length; i++) {
             if (A[i] == state) {
                 count++;
@@ -25,5 +26,4 @@ public class Problem1 {
         int[] A = { 0, 1, 0, 1 };
         System.out.println(minSwitches(A));
     }
-
 }
