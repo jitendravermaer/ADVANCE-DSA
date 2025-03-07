@@ -14,6 +14,7 @@
 // Output: 350
 
 public class Problem2 {
+    
     static int findHighestProduct(int[] arr) {
         int n = arr.length;
         if (n < 3) {
@@ -42,7 +43,6 @@ public class Problem2 {
                 min2 = arr[i];
             }
         }
-
         return Math.max(max1 * max2 * max3, min1 * min2 * max1);
     }
 
@@ -53,5 +53,4 @@ public class Problem2 {
         int[] arr2 = { 0, -1, 10, 7, 5 };
         System.out.println(findHighestProduct(arr2)); // 350
     }
-
 }
