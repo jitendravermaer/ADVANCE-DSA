@@ -101,4 +101,5 @@ public class BinaryTree {
         BinaryTree tree = new BinaryTree();
         tree.display();
     }
+    
 }
