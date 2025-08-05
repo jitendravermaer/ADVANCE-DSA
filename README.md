@@ -56,3 +56,5 @@ Greedy Algorithms: For optimization problems.
 Heuristics: For approximate solutions in intractable problems.
 
 Randomized Algorithms: Monte Carlo and Las Vegas algorithms.
+
+Link(2D ARRAYS/2D_ARRAYS_PREVIEW.md)
