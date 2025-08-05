@@ -57,4 +57,5 @@ Heuristics: For approximate solutions in intractable problems.
 
 Randomized Algorithms: Monte Carlo and Las Vegas algorithms.
 
-## 2D ARRAYS/2D_ARRAYS_PREVIEW.md
+📂 **2D Arrays Preview**  
+Read the full preview here: [2D_ARRAYS_PREVIEW.md](./2D_ARRAYS/2D_ARRAYS_PREVIEW.md)
