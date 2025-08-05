@@ -1,0 +1,36 @@
+name: Update README with 2D Arrays Preview
+
+on:
+  push:
+    paths:
+      - '2D_ARRAYS/2D_ARRAYS_PREVIEW.md'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+
+      - name: Inject Preview into README.md
+        run: |
+          preview_content=$(<2D_ARRAYS/2D_ARRAYS_PREVIEW.md)
+
+          # Escape backslashes and slashes for sed
+          escaped_preview=$(printf '%s\n' "$preview_content" | sed -e 's/[\/&]/\\&/g')
+
+          # Replace content between markers
+          sed -i "/<!--PREVIEW_START-->/, /<!--PREVIEW_END-->/c\\<!--PREVIEW_START-->\n$escaped_preview\n<!--PREVIEW_END-->" README.md
+
+      - name: Commit changes
+        run: |
+          git add README.md
+          git diff --cached --quiet || git commit -m "Update README preview section from 2D_ARRAYS_PREVIEW.md"
+          git push
