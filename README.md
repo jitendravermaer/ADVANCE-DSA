@@ -55,4 +55,4 @@ Advanced Data Structures and Algorithms refer to the study of complex and effici
 <!--PREVIEW_START-->
 <!--PREVIEW_END-->
 
-🔗 [Click to view full preview](https://jitendravermaer.github.io/ADVANCE-DSA/2D_ARRAYS/2D_ARRAYS_PREVIEW)
+🔗 [Click to view full preview](https://jitendravermaer.github.io/ADVANCE-DSA/2D_ARRAYS/2D_ARRAYS_PREVIEW.html)
